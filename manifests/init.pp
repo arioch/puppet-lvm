@@ -13,7 +13,7 @@
 # Sample Usage:
 #
 #	include lvm
-#	lvm::device {
+#	lvm::lv {
 #		"device1":
 #			ensure => present,
 #			size   => "10G",
@@ -36,7 +36,7 @@ class lvm {
 	# Parameters:
 	# ensure, vg, size=NONE
 	#
-	define device (ensure, vg, size=NONE) {
+	define lv (ensure, vg, size=NONE) {
 		case $ensure {
 			present: {
 				exec { "Create LVM device /dev/${vg}/${name}":
