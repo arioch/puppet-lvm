@@ -1,5 +1,6 @@
-Sample Usage:
+# Sample Usage:
 
+```
 node node01 {
 	include lvm
 	lvm::device {
@@ -20,3 +21,4 @@ node node01 {
 	        vg     => "vgStorage";
 	}
 }
+```
