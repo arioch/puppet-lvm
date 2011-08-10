@@ -1,8 +1,13 @@
+Work in progress:
+  - Managing local volumes works.
+  - Physical volume support comming soon.
+
+
 Sample Usage:
 
 node node01 {
 	include lvm
-	lvm::device {
+	lvm::lv {
         "device1":
 	        ensure => present,
             size   => "10G",
