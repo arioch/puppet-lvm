@@ -32,7 +32,7 @@
 #	}
 #
 class lvm {
-	# Define: device
+	# Define: lv
 	# Parameters:
 	# ensure, vg, size=NONE
 	#
